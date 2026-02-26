@@ -6,6 +6,8 @@ import Cart from "./Navbar/Cart"
 import CompanyIcon from "./Navbar/CompanyIcon"
 import Body from "./components/Body"
 
+//database
+
 const App = () => {
 
   const [searchTerm, setSearchTerm] = useState('')
@@ -23,7 +25,7 @@ const App = () => {
        </section>
       </section>
       <section>
-        <Body />
+        <Body searchTerm={searchTerm} />
       </section>
     </div>
   )

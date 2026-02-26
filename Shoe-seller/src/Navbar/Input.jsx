@@ -1,8 +1,12 @@
 import React from 'react'
+import { shoes } from '../Db/Data'
 
 const Input = ({searchTerm, setSearchTerm}) => {
+
     const handleSubmit = (searchTerm) => {
-        setSearchTerm("")
+      shoes.filter((shoe) => shoe.name.toLowerCase().includes(searchTerm.toLowerCase()))
+        // setSearchTerm("")
+        return shoes
     }
   return (
     <div className='flex items-center gap-5'>
