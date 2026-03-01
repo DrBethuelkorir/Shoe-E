@@ -1,8 +1,8 @@
 import React from 'react'
-import FilterbyColourPrice from './Sidebar/FilterbyColourPrice'
+import FilterbyColourPrice from '../components/Sidebar/FilterbyColourPrice'
 import { shoes } from '../Db/Data'
 
-const Body = ({searchTerm}) => {
+const Home = ({searchTerm}) => {
   return (
     <div className='flex flex-col md:flex-row gap-10 p-4'>
         <section className=''>
@@ -34,4 +34,4 @@ const Body = ({searchTerm}) => {
   )
 }
 
-export default Body;
+export default Home;
